@@ -1,0 +1,20 @@
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-content .inp1,
+.modal-content .inp2 {
+  height: 10vh;
+}
+
+.modal-content button {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+.modal-content h5 {
+  padding: 3% 0;
+  margin: auto;
+}
+/*# sourceMappingURL=Modals.css.map */
