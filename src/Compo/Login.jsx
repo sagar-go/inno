@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { MyContext } from "./Context";
+import "../Styles/Login.css";
 
 const Login = () => {
   const [name, setname] = useState("");
@@ -22,33 +23,35 @@ const Login = () => {
     }
   }
   return (
-    <div>
-      <h1>I am Login form</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your username"
-          value={name}
-          onChange={(e) => setname(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          value={pass}
-          onChange={(e) => setpass(e.target.value)}
-          placeholder="Enter your password"
-          minLength={5}
-          maxLength={10}
-          required
-        />
-        <button type="submit"> Login </button>
-      </form>
-      {error && (
-        <div>
-          {" "}
-          <h1>Please Check Username and Password</h1>
-        </div>
-      )}
+    <div className="login">
+      <div className="logpar">
+        <h4>Please log in to your account</h4>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Enter your username"
+            value={name}
+            onChange={(e) => setname(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            value={pass}
+            onChange={(e) => setpass(e.target.value)}
+            placeholder="Enter your password"
+            minLength={5}
+            maxLength={10}
+            required
+          />
+          <button type="submit"> Login </button>
+        </form>
+        {error && (
+          <div className="error">
+            <h6>Please Check Username and Password</h6>
+            <h6>Username is User123 and Password is Pass123</h6>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

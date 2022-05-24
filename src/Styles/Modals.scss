@@ -1,13 +1,23 @@
 .modal-content {
   border-radius: 10px;
-
+  background-color: white;
   .inp1,
   .inp2 {
     height: 10vh;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+
+    &:focus-within {
+      outline: none;
+    }
   }
 
   button {
-    width: 30%;
+    width: 42%;
     text-align: center;
     margin: auto;
   }

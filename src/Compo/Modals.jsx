@@ -28,9 +28,6 @@ const Modals = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        CREATE FAQ
-      </Button>
       <Modal
         className="modal"
         show={show}
@@ -98,7 +95,7 @@ const Modals = () => {
         <h5>Do you want to delete this?</h5>
 
         <Modal.Footer>
-          <Button variant="secondary" onClick={(e) => del(e)}>
+          <Button variant="danger" onClick={(e) => del(e)}>
             Yes
           </Button>
           <Button variant="primary" onClick={del2}>

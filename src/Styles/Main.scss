@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500&display=swap");
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.main {
+  background-image: linear-gradient(262deg, #ce9ffc 10%, #7367f0 100%);
+  min-height: 100vh;
+  padding-bottom: 1%;
+
+  h3 {
+    padding: 5% 0 0 40%;
+  }
+
+  .arr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 5% auto;
+    min-height: 35vh;
+    word-break: break-all;
+    padding: 0 3%;
+    background: rgba(169, 30, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  div {
+    width: 70%;
+    button {
+      margin-left: 10%;
+      width: 40%;
+      padding: 1%;
+      background: #efc1f7;
+      outline: none;
+
+      &:hover {
+        box-shadow: inset 200px 0 0 #a878f8;
+        color: white;
+      }
+    }
+  }
+}
+.icon {
+  position: sticky;
+  top: 16%;
+  left: 6%;
+
+  .faq {
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: white;
+    }
+
+    &:hover ~ span {
+      visibility: visible;
+    }
+  }
+  span {
+    visibility: hidden;
+    margin-left: 1%;
+  }
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding-top: 10%;
+    div {
+      button {
+        font-size: 14px;
+      }
+    }
+    h3 {
+      padding: 9% 0 0 22%;
+    }
+    .arr {
+      width: 80%;
+      margin: 15% auto;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+  .icon {
+    z-index: 99;
+
+    span {
+      display: none;
+    }
+  }
+}

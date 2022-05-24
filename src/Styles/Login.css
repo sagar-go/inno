@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500&display=swap");
+.login {
+  background: #0052d4;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#6fb1fc), color-stop(#4364f7), to(#0052d4));
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.logpar {
+  height: 60vh;
+  width: 50%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.logpar h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.logpar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  height: 40vh;
+}
+
+.logpar ::-webkit-input-placeholder {
+  color: #f5f2f2;
+}
+
+.logpar :-ms-input-placeholder {
+  color: #f5f2f2;
+}
+
+.logpar ::-ms-input-placeholder {
+  color: #f5f2f2;
+}
+
+.logpar ::placeholder {
+  color: #f5f2f2;
+}
+
+.logpar input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  width: 80%;
+  padding: 2%;
+  color: white;
+}
+
+.logpar input:focus-within {
+  outline: none;
+}
+
+.logpar button {
+  outline: none;
+  border: none;
+  background-color: #082cfb;
+  width: 50%;
+  padding: 3%;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.logpar h6 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.error h6 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .logpar {
+    height: 60vh;
+    width: 80vw;
+  }
+  .logpar h4 {
+    font-size: 1.2rem;
+  }
+  .logpar form {
+    width: 80%;
+  }
+  .logpar form input {
+    border-bottom: 1px solid black;
+  }
+  .error h6 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Login.css.map */
